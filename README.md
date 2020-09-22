@@ -4,21 +4,19 @@
 
 **Note:** There is a bug that is fixed in the upcoming Hugo 0.76 where styles are not rebuilt when your Tailwind or PostCSS config changes. If you want that sooner you can build Hugo from source.
 
-WORK IN PROGRESS
-
-A very simple starter set up with [TailnwindCSS](https://tailwindcss.com/) and its [typograhpy plugin](https://tailwindcss.com/docs/typography-plugin) and a build setup using [PostCSS](https://postcss.org/) and PurgeCSS (when running the production build).
+A very simple starter set up with [TailwindCSS](https://tailwindcss.com/) and its [typograhpy plugin](https://tailwindcss.com/docs/typography-plugin) and a build setup using [PostCSS](https://postcss.org/) and PurgeCSS (when running the production build).
 
 
 This setup can be used both as a starter project and a theme.
 
-## As a project
+## As a Project
 
 ```bash
 npm install
 hugo server
 ```
 
-## As a theme
+## As a Theme
 
 Import it into your project, and then run:
 
