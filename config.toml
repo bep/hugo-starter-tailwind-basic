@@ -1,0 +1,7 @@
+baseURL = "https://example.org"
+
+disableKinds = ["page", "section", "taxonomy", "term"]
+
+[build]
+# Used by PurgeCSS
+writeStats = true
