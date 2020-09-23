@@ -18,6 +18,7 @@ module.exports = {
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
 		content: [ './hugo_stats.json' ],
+		mode: 'all',
 		options: {
 			//whitelist: [ 'pl-1', 'pl-3' ],
 			defaultExtractor: (content) => {
