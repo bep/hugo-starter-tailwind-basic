@@ -7,6 +7,7 @@
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.2.0",
 		"autoprefixer": "~9.7.6",
+		"postcss": "^8.0.9",
 		"postcss-cli": "^8.0.0",
 		"postcss-purgecss": "^2.0.3",
 		"tailwindcss": "^1.8.10"
