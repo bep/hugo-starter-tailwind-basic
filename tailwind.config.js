@@ -11,10 +11,6 @@ const px = (px) => `${px}px`;
 
 module.exports = {
 	important: true, // See https://tailwindcss.com/docs/configuration#important
-	experimental: {
-		// See https://github.com/tailwindlabs/tailwindcss/pull/2159
-		applyComplexClasses: true
-	},
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
 		content: [ './hugo_stats.json' ],
