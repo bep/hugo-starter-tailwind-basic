@@ -18,7 +18,7 @@ hugo server
 
 ## As a Theme
 
-Import it into your project, and then run:
+Import `github.com/bep/hugo-starter-tailwind-basic/v2` (use `github.com/bep/hugo-starter-tailwind-basic` if you want/need Tailwind 1.x.) into your project, and then run:
 
 ```bash
 hugo mod npm pack
