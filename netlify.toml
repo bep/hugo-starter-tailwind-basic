@@ -17,9 +17,6 @@ command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.75.1"
 
-[[plugins]]
-package = "netlify-plugin-hugo-cache-resources"
-
 [[headers]]
 for = "/*.jpg"
 
