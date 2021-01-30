@@ -13,16 +13,21 @@ module.exports = {
 	important: true, // See https://tailwindcss.com/docs/configuration#important
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
-		content: [ './hugo_stats.json' ],
+    content: [
+      './hugo_stats.json',
+      './layouts/**/*.html',
+		],
+		extractors: [
+      {
+        extractor: (content) => {
+					let els = JSON.parse(content).htmlElements;
+					return els.tags.concat(els.classes, els.ids);
+				},
+        extensions: ['json']
+      },
+    ],
 		mode: 'all',
-		options: {
-			//whitelist: [ 'pl-1', 'pl-3' ],
-			defaultExtractor: (content) => {
-				let els = JSON.parse(content).htmlElements;
-				els = els.tags.concat(els.classes, els.ids);
-				return els;
-			}
-		}
+		
 	},
 	plugins: [ typography ]
 };
