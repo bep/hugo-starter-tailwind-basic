@@ -6,12 +6,12 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.3.0",
-		"autoprefixer": "^10.0.4",
-		"postcss": "^8.1.10",
-		"postcss-cli": "^8.0.0",
+		"@tailwindcss/typography": "^0.4.1",
+		"autoprefixer": "^10.3.1",
+		"postcss": "^8.3.6",
+		"postcss-cli": "^8.3.1",
 		"postcss-purgecss": "^2.0.3",
-		"tailwindcss": "^2.0.1"
+		"tailwindcss": "^2.2.7"
 	},
 	"name": "hugo-starter-tailwind-basic",
 	"version": "0.1.0"
