@@ -3,19 +3,19 @@ publish = "public"
 command = "hugo --gc --minify -d public;"
 
 [context.production.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.97.3"
 
 [context.branch-deploy]
 command = "hugo --minify --gc -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.97.3"
 
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.97.3"
 
 [[headers]]
 for = "/*.jpg"
