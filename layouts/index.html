@@ -1,8 +1,13 @@
 {{ define "main" }}
   <article class="prose lg:prose-xl">
-    <h1 class="text-4xl">
-      {{ .Title }}!!
-    </h1>
+    <h1>Tailwind 3 Hugo Starter</h1>
+
+    <h2 class="text-4xl">Testing Tailwind 3 Features</h2>
+    <div>
+      <button class="bg-[#1da1f1] p-3">Share on Twitter</button>
+    </div>
+
+    <h2 class="text-4xl">Markdown: {{ .Title }}</h2>
     {{ .Content }}
   </article>
 {{ end }}

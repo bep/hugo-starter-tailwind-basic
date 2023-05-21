@@ -1,16 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>
       {{ .Title }}
     </title>
-    <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Description }}" />
     {{/* styles */}}
     {{ $options := dict "inlineImports" true }}
     {{ $styles := resources.Get "css/styles.css" }}
     {{ $styles = $styles | resources.PostCSS $options }}
-    {{ if  hugo.IsProduction  }}
+    {{ if or true hugo.IsProduction }}
       {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
