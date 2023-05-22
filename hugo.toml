@@ -1,0 +1,23 @@
+baseURL = "https://example.org"
+
+disableKinds = ["page", "section", "taxonomy", "term"]
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min      = "0.111.0"
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "layouts/.*\\.html$"
+    target = "styles\\.css"
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js|ts|jsx|tsx)"
+    target = "js"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"

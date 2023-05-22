@@ -10,9 +10,10 @@
     {{ $options := dict "inlineImports" true }}
     {{ $styles := resources.Get "css/styles.css" }}
     {{ $styles = $styles | resources.PostCSS $options }}
-    {{ if or true hugo.IsProduction }}
-      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | minify | fingerprint }}
     {{ end }}
+    {{ $styles = $styles | resources.PostProcess }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   </head>
   <body class="my-10">
