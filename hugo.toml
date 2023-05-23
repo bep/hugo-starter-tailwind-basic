@@ -5,7 +5,7 @@ disableKinds = ["page", "section", "taxonomy", "term"]
 [module]
   [module.hugoVersion]
     extended = false
-    min      = "0.111.0"
+    min      = "0.112.0"
   [[module.mounts]]
     source = "assets"
     target = "assets"
