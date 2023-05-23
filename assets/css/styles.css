@@ -5,11 +5,11 @@
 @import "components/all.css";
 
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @screen md {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
