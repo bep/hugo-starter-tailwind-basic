@@ -1,0 +1,55 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "article",
+      "blockquote",
+      "body",
+      "button",
+      "code",
+      "div",
+      "em",
+      "h1",
+      "h2",
+      "h3",
+      "head",
+      "html",
+      "li",
+      "link",
+      "meta",
+      "ol",
+      "p",
+      "pre",
+      "strong",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "bg-[green]",
+      "container",
+      "highlight",
+      "lg:mx-auto",
+      "lg:prose-xl",
+      "my-10",
+      "p-4",
+      "prose",
+      "px-4",
+      "text-4xl"
+    ],
+    "ids": [
+      "block-elements",
+      "blockquotes",
+      "code",
+      "code-blocks",
+      "emphasis",
+      "headers",
+      "links",
+      "lists",
+      "overview",
+      "paragraphs-and-line-breaks",
+      "philosophy",
+      "span-elements",
+      "this-is-a-header"
+    ]
+  }
+}
